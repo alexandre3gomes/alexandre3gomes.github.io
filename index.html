@@ -2,19 +2,20 @@
 
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/root.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://use.fontawesome.com/6076100825.js"></script>
 </head>
 
 <body>
     <header class="header text-center">
-        <h1>Alexandre Gomes da Silva</h1>
-        <h3>Software engineer</h3>
+        <h1 class="pt-5">Alexandre Gomes da Silva</h1>
+        <h3 class="pb-5">Software engineer</h3>
     </header>
     <div id="root" class="container">
         <div class="row">
             <div class="col-sm-8">
-                <div class="card">
-                    <div class="card-header">Profile</div>
+                <div class="card mb-5">
+                    <div class="card-header"><b>Profile</b></div>
                     <div class="card-body text-justify">
                         Self-directed and motivated Software
                         Engineer experienced working effectively in
@@ -33,16 +34,134 @@
                         as scrum master.
                     </div>
                 </div>
+                <div class="card mb-5">
+                    <div class="card-header"><b>Education</b></div>
+                    <div class="card-body text-justify">
+                        <h4>Anhembi Morumbi</h4>
+                        <p>Master of Science - Software Engineering</p>
+                        <h4>Fatec Santos</h4>
+                        <p>Bachelor of Science - Software Development</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header"><b>Contact</b></div>
+                    <div class="card-body text-justify">
+                        <h4>Mobile</h4>
+                        <p>+351 915 649 347</p>
+                        <h4>Email</h4>
+                        <p>alexandre3gomes@gmail.com</p>
+                    </div>
+                </div>
             </div>
             <div class="col-sm-4">
-                <div class="card">
-                    <div class="card-header">Skills</div>
+                <div class="card mb-5">
+                    <div class="card-header"><b>Skills</b></div>
                     <div class="card-body">
-                        <p v-for="skill in skills">{{ skill }}</p>
+                        <div class="row align-items-center" v-for="skill in skills">
+                            <div class="col-sm-7">{{ skill.name }}</div>
+                            <div class="col-sm-5">
+                                <i class="fa fa-circle mr-1" aria-hidden="true" v-for="lev in skill.level"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header"><b>Additional info</b></div>
+                    <div class="card-body text-justify">
+                        Brazilian living in Portugal for
+                        around one year and available to
+                        explore new opportunities.
                     </div>
                 </div>
             </div>
         </div>
+        <div class="row mt-5">
+            <div class="col-sm-12 header text-center">
+                <h1>Experiences</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card mt-1">
+                    <div class="card-header"><b>Software Engineer - Bold - Portugal | Sep,2018 - current</b></div>
+                    <div class="card-body text-justify">
+                        <ul>
+                            <li>Analisys and implementation of users stories to define the best way to proceed.</li>
+                            <li>
+                                Creation of dynamic Adobe Experience Manager components using Html
+                                5, Css and Javascript (Vuejs) to be used in a website for marketing
+                                campaigns.
+                            </li>
+                            <li>
+                                Participation in scrum cerimonies and refinement meetings to define
+                                technical backlog.
+                            </li>
+                            <li>
+                                Deployment of AEM applications in different environments using Jenkins
+                                and Gitflow.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card mt-5">
+                    <div class="card-header"><b>Software Engineer - Neogrid - Brazil | Feb, 2014 - Feb, 2018</b></div>
+                    <div class="card-body text-justify">
+                        <ul>
+                            <li>
+                                Worked on development of robust Supply chain management solutions to
+                                meet client requirements for functionality, scalability and performance.
+                            </li>
+                            <li>
+                                Orchestrated efficient deployments, including testing features and
+                                correcting code to produce innovative products.
+                            </li>
+                            <li>
+                                Worked closely with other business analysts, development teams and
+                                infrastructure specialists to deliver high availability solutions for missioncritical
+                                applications.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card mt-5 mb-5">
+                    <div class="card-header"><b>Development Team Leader - Scua Segurança da informação - Brazil | Oct,
+                            2010
+                            - Jan, 2014</b></div>
+                    <div class="card-body text-justify">
+                        <ul>
+                            <li>
+                                Carefully documented technical workflows and knowledge in private wiki
+                                for education of newly hired employees.
+                            </li>
+                            <li>
+                                Gathered and defined customer requirements to develop well-organized
+                                project plans based on clear specifications.
+                            </li>
+                            <li>
+                                Adjusted software parameters to boost performance and incorporate new
+                                features for meeting customer needs.
+                            </li>
+                            <li>
+                                Collaborated with IT team and other support staff to develop new
+                                applications.
+                            </li>
+                            <li>
+                                Led team of 6 members while providing exceptional customer service.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
