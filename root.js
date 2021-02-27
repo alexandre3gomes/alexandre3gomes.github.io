@@ -1,9 +1,14 @@
 const root = new Vue({
     el: '#root',
     data: {
-        skills: [{
+        skills: [
+            {
                 name: 'Java',
                 level: 5
+            },
+            {
+                name: 'Kotlin',
+                level: 4
             },
             {
                 name: 'SQL',
@@ -32,6 +37,18 @@ const root = new Vue({
             {
                 name: 'Maven',
                 level: 3
+            },
+            {
+                name: 'AWS',
+                level: 3
+            },
+            {
+                name: 'Azure',
+                level: 2
+            },
+            {
+                name: 'Kubernetes',
+                level: 4
             },
             {
                 name: 'Scrum',
