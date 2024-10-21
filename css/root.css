@@ -2,3 +2,19 @@
     background-image: url(../images/header.png);
     color: white;
 }
+
+.download-btn {
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+@media print {
+    .download-btn {
+      display: none;
+    }
+  }
