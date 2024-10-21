@@ -40,7 +40,7 @@ const root = new Vue({
             },
             {
                 name: 'AWS',
-                level: 3
+                level: 4
             },
             {
                 name: 'Azure',
@@ -75,10 +75,6 @@ const root = new Vue({
                 level: 4
             },
             {
-                name: 'UML',
-                level: 4
-            },
-            {
                 name: 'CI',
                 level: 3
             },
@@ -93,6 +89,10 @@ const root = new Vue({
             {
                 name: 'Selenium',
                 level: 3
+            },
+            {
+                name: 'Cypress',
+                level: 2
             }
         ]
     }
